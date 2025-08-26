@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DummyZon | E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="DummyZon.png" type="image/x-icon">
+
+    <!--! replace this kit to your fon awesome kit -->
+    <script src="https://kit.fontawesome.com/dbb0095f41.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Macondo&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Macondo&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--? nav bar -->
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <img src="DummyZon.png" alt="logo">
+                    <li><a href="index.html">DummyZon</a></li>
+                </div>
+
+                <li class="hide"><a href="#">Products</a></li>
+                <li class="hide"><a href="#">Categories</a></li>
+                <li class="hide"><a href="#">About</a></li>
+                <li class="hide"><a href="#">Contact</a></li>
+
+                <div class="user">
+                    <li class="hide"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="hide"><img src="user.jpeg" alt="user"></li>
+                    <li onclick="showSidebar()" class="show"><i class="fa-solid fa-bars"></i></li>
+                </div>                
+            </ul>
+
+    <!--? sidebar -->
+            <ul class="sidebar">
+                <li onclick="hideSidebar()" class="hide-sidebar"><i class="fa-solid fa-xmark"></i></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Catagories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="sidebar-user">
+                    <li><img src="user.jpeg" alt=""></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </div>                
+            </ul>
+
+        </nav>
+    </header>
+
+    <!--? product's page -->
+    <section>
+
+        <img src="gaming-pc.jpg" alt="product">
+        <p class="company">Asus Inc.</p>
+        <h2>Asus 4K Gaming PC</h2>
+        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laudantium voluptatem, reprehenderit quibusdam dolor consequuntur ex, similique expedita architecto sunt ipsam non atque modi. Ad pariatur quam corrupti nulla deleniti!</p>
+            <ul>
+                <h4>Specification</h3>
+                <li><i class="fa-solid fa-check"></i> RAM: 8+8 GB DDR4 2666 MHz Memory (Duel Channel)</li>
+                <li><i class="fa-solid fa-check"></i> CPU: AMD Ryzen 7 7700X</li>
+                <li><i class="fa-solid fa-check"></i> GPU: Nvidia RTX 4090 Ti</li>
+                <li><i class="fa-solid fa-check"></i> Motherboard: Gigabyte B650E Aorus Master</li>
+                <li><i class="fa-solid fa-check"></i> Air Cooler: Noctua NH-D15 G2</li>
+                <li><i class="fa-solid fa-calendar"></i> One year of warrenty</li>
+            </ul>
+        <h3 class="price">$499.50</h3>
+        <p class="discount">50%</p>
+        <del>$999.00</del>
+
+        <div class="buy">
+            <div class="buy-child">
+                <p class="add-product">+</p>
+                <p class="selected-num">0</p>
+                <p class="decrease-product">-</p>
+            </div>
+            <button><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+
+    </section>
+
+    <!--? footer -->
+    <footer>
+
+        <div class="footer-logo">
+            <img src="DummyZon.png" alt="logo">
+        </div>
+
+        <div class="links">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of services</a>
+        </div>
+
+        <div class="social">
+            <a href="www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="www.github.com"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> DummyZon &bull; Working only for your love</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
